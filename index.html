@@ -24,7 +24,7 @@
         <div data-nav-link-overlay class="fixed top-0 left-0 w-full h-full bg-black/[0.7] z-10 hidden"></div>
         <!-- Start the navigation links -->
         <ul data-nav-links class="-left-[250px] transition-all duration-150 z-20 lg:static fixed lg:flex flex-wrap top-0 h-full lg:max-w-max max-w-[250px] w-full lg:bg-transparent bg-white overflow-auto">
-          <button onclick="toggleNavigation()" class="lg:hidden block text-2xl absolute right-5 top-3 bg-gray-100 text-gray-900 px-3 py-2">&times;</button>
+          <button onclick="toggleNavigation()" class="lg:hidden block text-2xl absolute right-5 top-3 bg-gray-100 text-gray-900 px-3 pb-2 place-self-center rounded-lg">&times;</button>
           <li class="mr-[51px]">
             <a href="/" title="" class="lg:text-white text-gray-900 lg:p-0 p-4 block text-[16px] font-medium font-sans">Home</a>
           </li>
@@ -54,8 +54,8 @@
     <!-- Hero section -->
     <section id="HeroSection" class="py-12">
       <div class="container text-center max-w-[730px] w-full mx-auto">
-        <h1 class="font-bold text-white text-[80px] leading-[88px]">Work at the speed of thought</h1>
-        <p class="max-w-[602px] w-full text-gray-200 font-normal mt-10 mx-auto text-lg leading-normal">
+        <h1 class="font-bold text-white lg:text-[80px] lg:leading-[88px] text-[50px] leading-[58px]">Work at the speed of thought</h1>
+        <p class="max-w-[602px] w-full text-gray-200 font-normal lg:mt-10 mt-5 mx-auto text-lg leading-normal">
           Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their
           schedule.
         </p>
@@ -71,7 +71,7 @@
       </div>
       <img src="/assets/images/hero-bg.png" alt="Hero Background" class="w-full h-auto mt-10" />
     </section>
-    <!-- Feature section -->
+    <!-- Features lg:w-full -->
     <section id="FeatureSection" class="py-12">
       <div class="container">
         <div class="section-head max-w-[602px] w-full mx-auto text-center">
@@ -81,13 +81,14 @@
             schedule.
           </p>
         </div>
-        <div class="flex">
-          <div class="w-9/12">
-            <img src="/assets/images/dashboard.png" alt="dashboard" class="w-full h-auto mt-12" />
+        <!-- Start the dashboards -->
+        <div class="flex justify-center flex-wrap items-center mt-12 -mx-4">
+          <div class="lg:w-8/12 w-full px-4 lg:mb-0 mb-5">
+            <img src="/assets/images/dashboard.png" alt="dashboard" class="w-full h-auto mt-8 pointer-events-none" />
           </div>
-          <div class="w-3/12 mt-12">
-            <ul>
-              <li class="my-12">
+          <div class="lg:w-3/12 w-full px-4">
+            <ul class="lg:block flex justify-center flex-wrap">
+              <li class="lg:my-16 my-16 px-3 lg:w-full md:w-1/2">
                 <div class="flex">
                   <img src="/assets/images/icons/feature-icon.svg" alt="feature icon" class="" />
                   <h4 class="ml-3 text-2xl text-white font-medium">A single source of truth</h4>
@@ -96,8 +97,8 @@
                   When you add work to your Slate calendar we automatically calculate useful insights
                 </p>
               </li>
-              <li class="my-16">
-                <div class="flex flex-wrap">
+              <li class="lg:my-16 my-16 px-3 lg:w-full md:w-1/2">
+                <div class="flex">
                   <img src="/assets/images/icons/feature-icon-1.svg" alt="feature icon" class="" />
                   <h4 class="ml-3 text-2xl text-white font-medium">A single source of truth</h4>
                 </div>
@@ -105,8 +106,8 @@
                   When you add work to your Slate calendar we automatically calculate useful insights
                 </p>
               </li>
-              <li class="my-16">
-                <div class="flex flex-wrap">
+              <li class="lg:my-16 my-16 px-3 lg:w-full md:w-1/2">
+                <div class="flex">
                   <img src="/assets/images/icons/feature-icon-2.svg" alt="feature icon" class="" />
                   <h4 class="ml-3 text-2xl text-white font-medium">A single source of truth</h4>
                 </div>
