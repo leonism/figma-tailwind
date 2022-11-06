@@ -6,7 +6,10 @@ const toggleNavigation = () => {
 
     // if found, remove them
     navigationLinks.classList.remove("hidden")
+
+    // else
   } else {
+    
     // if not, add them
     navigationLinks.classList.add("hidden")
   }
